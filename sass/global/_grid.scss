@@ -1,0 +1,54 @@
+/////////////////////////////////////-+++-/////////////////////////////////////////
+// Grid
+// Custom grid layouts based on the Toast grid system structure
+// more on toast here: http://daneden.github.io/Toast/
+/////////////////////////////////////-+++-/////////////////////////////////////////
+
+
+
+/////////////////////////////////////-+++-
+// Base grid class
+
+$grid: 60px;
+
+.u-grid {
+  min-width: 100%;
+  text-align: center;
+
+  @include mq($from: highschool) {
+    margin-left: -$grid;
+  }
+
+  & > .u-gridCol {
+    display: inline-block;
+    margin-right: -.25em;
+    min-height: 1px;
+    vertical-align: top;
+    text-align: left;
+
+    @include mq($from: highschool) {
+      padding-left: $grid;
+    }
+  }
+}
+
+
+/////////////////////////////////////-+++-
+// custom grid styles below
+
+
+// 2up grid
+.u-grid2 {
+  & > .u-gridCol {
+    margin-bottom: $grid;
+
+    @include mq($from: highschool) {
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+

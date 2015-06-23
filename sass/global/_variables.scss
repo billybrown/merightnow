@@ -1,0 +1,68 @@
+/////////////////////////////////////-+++-/////////////////////////////////////////
+// Global Variables
+/////////////////////////////////////-+++-/////////////////////////////////////////
+
+
+
+/////////////////////////////////////-+++
+// fonts
+
+
+$corben: 'Corben';
+$opensans: 'Open Sans';
+
+$serif : $corben, $helvetica;
+$sans-serif: $opensans, $helvetica;
+
+
+/////////////////////////////////////-+++
+// colors
+
+
+$gray-dark: darkgray;
+$gray: gainsboro;
+$gray-light: darken(snow, 5%);
+
+$background: #fff;
+$text: #333;
+
+$link-color: dodgerblue;
+$link-colorHover: darken($link-color, 10%);
+
+
+
+/////////////////////////////////////-+++
+// breakpoints
+
+
+$mq-breakpoints: (
+    elementary:  390px,
+    middleschool:  600px,
+    highschool: 768px,
+    gapyear:    850px,
+    college:    1000px,
+    offcanvas: 	1150px,
+    fifthyear:    1150px,
+    masters:    1250px,
+    doctorate: 1600px
+) !default;
+
+$mq-static-breakpoint: masters;
+
+
+
+/////////////////////////////////////-+++
+// Misc. values
+
+
+$comp-max-width: 80vw; // if working from a PSD or other static comp
+$site-max-width: 80vw;
+$page-max-width: 80vw;
+
+$page-element-spacing: 20px;
+$spacing: 20px;
+$grid-gutter: $spacing;
+
+$animation-speed: .2s;
+$animation-easing: ease;
+$animation: $animation-speed $animation-easing;

@@ -1,0 +1,29 @@
+videos:
+  - date: 2014
+    video: https://player.vimeo.com/video/131492459
+    summary: "I take a full time remote job at a web design agency, Echo & Co."
+  - date: 2013
+    video: https://player.vimeo.com/video/72662732
+    summary: Jess and I move back to New Orleans. I'm freelancing web work and Jessie gets a job at the Louisiana State Musuem.
+  - date: 2012
+    video: https://player.vimeo.com/video/54225908
+    summary: "Jessie finishes grad school in Boston and moves in at my place in Northampton, MA. I continue to work at Free Press."
+  - date: 2011
+    video: https://player.vimeo.com/video/26812783
+    summary: "My AmeriCorps job ends and I move to Northampton, MA to be Free Press' graphic designer."
+  - date: 2010
+    video: https://player.vimeo.com/video/13619347
+    summary: Jessie and I move to Boston for her to start grad school and for my second year of AmeriCorps.
+  - date: 2009
+    video: https://player.vimeo.com/video/5290540
+    summary: Jessie and I move to New Orleans. I have a job lined up at a Community Center through AmeriCorps.
+  - date: 2008
+    video: https://player.vimeo.com/video/1267472
+    summary: I've graduated and Jessie and I enter into our year long entreprenuership fellowship at Wake Forest for Stuffed Robots.
+  - date: 2007
+    video: https://player.vimeo.com/video/192701
+    summary: "I'm about to start my senior year at Wake Forest in Winston-Salem, NC. I'm a studio art major."
+videosNext:
+  - date: 2015
+    video: https://player.vimeo.com/video/72662732
+    summary: "Jessie and I get married! She starts a new job at Lusher Highschool teaching sculpture. I'm still at Echo & Co."

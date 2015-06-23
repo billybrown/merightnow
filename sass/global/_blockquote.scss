@@ -1,0 +1,27 @@
+/////////////////////////////////////-+++-/////////////////////////////////////////
+// Blockquote
+/////////////////////////////////////-+++-/////////////////////////////////////////
+
+
+
+blockquote {
+	@extend %u-title;
+	position: relative;
+	padding: $spacing;
+	text-align: center;
+	color: $gray;
+
+	p {
+		margin: 0;
+	}
+
+	cite {
+		@extend %u-text;
+
+		&:before {
+			content: '— ';
+			display: inline-block;
+			padding-right: 5px;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+/////////////////////////////////////-+++-/////////////////////////////////////////
+// Header
+/////////////////////////////////////-+++-/////////////////////////////////////////
+
+
+
+.SiteHeader {
+	text-align: center;
+	padding: 20vh 0;
+
+	h1 {
+		@extend %u-giantTitle;
+		position: relative;
+		padding-bottom: 7vh;
+		margin-bottom: 5vh;
+
+		&:after {
+			content: '';
+			height: 1px;
+			width: 100px;
+			background: goldenrod;
+			@extend %u-absoluteBottomCenter;
+		}
+
+
+		&:before {
+			content: '';
+			height: 11px;
+			width: 11px;
+			margin-bottom: -5px;
+			border-radius: 50%;
+			background: goldenrod;
+			@extend %u-absoluteBottomCenter;
+		}
+	}
+}

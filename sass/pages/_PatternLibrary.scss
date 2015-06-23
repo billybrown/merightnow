@@ -1,0 +1,46 @@
+/////////////////////////////////////-+++-/////////////////////////////////////////
+// Pattern Library
+/////////////////////////////////////-+++-/////////////////////////////////////////
+
+
+.Page-patternLibrary {
+	.SiteMain > .u-constrained {
+		max-width: none;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.PatternLibrary {
+
+	& > li {
+		margin-bottom: $spacing * 2;		
+
+		& > ul > li {
+			margin-bottom: $spacing;
+
+			& > label:first-child {
+				display: block;
+				padding-bottom: 6px;
+			}
+		}
+
+		& > label,
+		& > .u-constrained > label {
+			border-bottom: 1px solid $gray;
+			display: block;
+			text-align: center;
+			padding: 0 0 10px;
+			margin: 0 0 $spacing;
+		}
+	}
+}
+
+.PatternLibrary-grid {
+	.u-gridCol span {
+		display: block;
+		padding: 3px 0;
+		text-align: center;
+		background: $gray;
+	}
+}

@@ -1,0 +1,95 @@
+/////////////////////////////////////-+++-/////////////////////////////////////////
+// Video
+/////////////////////////////////////-+++-/////////////////////////////////////////
+
+
+
+.Video {
+	max-width: 400px;
+	margin: 0 auto 40px;
+
+	@include mq($from: highschool) {
+		display: flex;
+		max-width: none;
+		margin: 0;
+	}
+
+	 & > div {
+	 	text-align: center;
+	 	position: relative;
+
+	 	@include mq($from: highschool) {
+	 		flex: 1;
+	 	}
+	 }
+
+	iframe {
+		margin: 0;
+		display: block;
+
+		@include mq($from: highschool) {
+			min-height: 300px;
+		}
+	}
+
+	&.is-highlighted {
+		.Video__date {
+			font-size: 63px;
+		}
+	}
+
+}
+
+.Video__dateGroup__inside,
+.Video__summary p {
+	@include u-absoluteCenter(highschool);
+	z-index: 2;
+	width: 100%;
+}
+
+.Video__date {
+	transition: font-size .5s ease;
+	@extend %u-largeTitle;
+	padding: 30px;
+}
+
+.Video__summer {
+	@extend %u-blockText;
+	display: inline-block;
+	padding: 2px 9px;
+	background: #fff;
+	margin-bottom: 2px;
+}
+
+.Video__dateGroup {
+	&:before {
+		content: '';
+		width: 10px;
+		height: 10px;
+		background: goldenrod;
+		border-radius: 50%;
+		@extend %u-absoluteCenter;
+		margin-top: -30px;
+
+		@include mq($from: highschool) {
+			margin-top: -63px;
+		}
+	}
+
+	&:after {
+		content: '';
+		height: 100%;
+		width: 1px;
+		background: goldenrod;
+		@extend %u-absoluteCenter;
+	}
+}
+
+.Video__summary {
+	background: transparent url('../img/dot.svg') repeat;
+	border-bottom: 1px solid goldenrod;
+	p {
+		padding: 30px 50px;
+		margin: 0;
+	}
+}

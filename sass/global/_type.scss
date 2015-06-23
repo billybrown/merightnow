@@ -1,0 +1,134 @@
+/////////////////////////////////////-+++-/////////////////////////////////////////
+// Type
+/////////////////////////////////////-+++-/////////////////////////////////////////
+
+
+
+/////////////////////////////////////-+++-
+// Regular text styles
+
+
+%u-text {
+	font: 400 17px/30px $sans-serif;
+}
+
+%u-smallText {
+	font: 400 15px/22px $sans-serif;
+}
+
+%u-largeText {
+	font: 400 21px/32px $sans-serif;
+}
+
+%u-tinyText {
+	font: 600 12px/16px $sans-serif;
+}
+
+%u-blockText {
+	font: 600 11px/16px $sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+%u-subduedText {
+	@extend %u-tinyText;
+	color: $gray;
+}
+
+// some utility classes for easy deployment of these text types
+.u-text { @extend %u-text; }
+.u-smallText { @extend %u-smallText; }
+.u-largeText { @extend %u-largeText; }
+.u-tinyText { @extend %u-tinyText; }
+.u-blockText { @extend %u-blockText; }
+
+
+
+/////////////////////////////////////-+++-
+// Titles and headers
+
+
+%u-title {
+	font: 700 21px/28px $serif;
+}
+
+%u-smallTitle {
+	font: 700 26px/32px $serif;
+}
+
+%u-largeTitle {
+	font: 700 26px/32px $serif;
+
+	@include mq($from: middleschool) {
+		font-size: 50px;
+		line-height: 55px;
+	}
+}
+
+%u-giantTitle {
+	font: 700 30px/34px $serif;
+
+	@include mq($from: middleschool) {
+		font-size: 77px;
+		line-height: 80px;
+	}
+}
+
+
+// some utility classes for easy deployment of these text types
+.u-title { @extend %u-title; }
+.u-smallTitle { @extend %u-smallTitle; }
+.u-largeTitle { @extend %u-largeTitle; }
+.u-giantTitle { @extend %u-giantTitle; }
+
+
+
+/////////////////////////////////////-+++-
+// Buttons and tags
+
+
+%u-buttonDefault {
+	border: none;
+	background: $link-color;
+	color: #fff;
+
+	&:hover {
+		background: darken($link-color, 10%);
+		color: #fff;
+		cursor: pointer;
+		text-decoration: none;
+	}	
+}
+
+%u-button {
+	@extend %u-buttonDefault;
+	@extend %u-smallTitle;
+	padding: 8px 19px;
+	border-radius: 2px;
+}
+
+%u-largeButton {
+	@extend %u-buttonDefault;
+	@extend %u-title;
+	padding: 11px 28px;
+	border-radius: 3px;
+}
+
+%u-smallButton {
+	@extend %u-buttonDefault;
+	@extend %u-text;
+	padding: 3px 6px;
+	border-radius: 2px;
+}
+
+%u-tag {
+	@extend %u-buttonDefault;
+	@extend %u-blockText;
+	display: inline-block;
+}
+
+.u-button { @extend %u-button; }
+.u-smallButton { @extend %u-smallButton; }
+.u-largeButton { @extend %u-largeButton; }
+.u-tag { @extend %u-tag; }
+

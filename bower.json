@@ -1,0 +1,25 @@
+{
+  "name": "merightnow",
+  "version": "0.0.0",
+  "homepage": "https://github.com/billybrown/merightnow",
+  "authors": [
+    "Bill Brown <bill@echo.co>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "waypoints": "~3.1.1"
+  },
+  "devDependencies": {
+    "waypoints": "~3.1.1",
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.3",
+    "fitvids": "~1.1.0"
+  }
+}
