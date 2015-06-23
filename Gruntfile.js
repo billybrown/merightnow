@@ -34,5 +34,8 @@ module.exports = function(grunt) {
     'assemble',
     'copy:favicon'
   ]);
+
+  grunt.registerTask('deploy', ['build', 'gh-pages']);
+
 };
 
