@@ -1,4 +1,7 @@
 videos:
+  - date: 2015
+    video: https://player.vimeo.com/video/131729181
+    summary: "Jessie and I get married! We're still kicking it in New Orleans."
   - date: 2014
     video: https://player.vimeo.com/video/131492459
     summary: "Jess and I are engaged! I take a full time remote job at a web design agency, Echo & Co."
@@ -23,7 +26,3 @@ videos:
   - date: 2007
     video: https://player.vimeo.com/video/192701
     summary: "I'm about to start my senior year at Wake Forest in Winston-Salem, NC. I'm a studio art major."
-videosNext:
-  - date: 2015
-    video: https://player.vimeo.com/video/72662732
-    summary: "Jessie and I get married! She starts a new job at Lusher Highschool teaching sculpture. I'm still at Echo & Co."
